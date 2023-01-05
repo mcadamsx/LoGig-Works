@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manage Category</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d407498546.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/ovasyte/ovasyte/assests/style.css">
+</head>
+
+<body>
+
+    <div class="modal fade" id="newCategoryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="newCategoryModal">Add New Category</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+    
+              <div class="form form-floating mb-3">
+                <form class="row g-3 m-5">
+                  <div class="form-floating col-md-7">
+                    <i class="icon  fa-solid fa-user fa-lg"></i>
+                    <input type="text" class="form-control input-sm" id="inputVisitor" placeholder="Visitor Name">
+                    <label for="inputVisitor" class="form-label">Name</label>
+                  </div>
+                  <div class="form-floating col-md-5">
+                    <input type="color" class="form-control" id="inputPhone" placeholder="phone">
+                    <label for="inputPhone" class="form-label">Color</label>
+                  </div>
+                  <div class="form-floating col-md-12">
+                    <i class="icon fa-lg fa-solid fa-comment-dots"></i>
+                    <textarea name="" class="form-control" id="iinputPurpose" cols="1" rows="4"
+                      placeholder="Purpose"></textarea>
+                    <label for="inputZip" class="form-label">Discription</label>
+                  </div>
+    
+              </div>
+    
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-submit" style="float: right;">Submit</button>
+            </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    
+
+    <div class="bg">
+
+        <!-- View All Clients -->
+
+        <div class="form form-floating mb-3">
+            <form class="row g-3 m-5">
+
+                <!-- Add New Category -->
+
+                <div class="container">
+                    <div class="row height d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn m-5 addCategoryBtn" data-bs-toggle="modal"
+                            data-bs-target="#newCategoryModal">
+                            Add New Category
+                        </button>
+                    </div>
+                </div>
+                <!-- Search Client -->
+                <div class="form-floating col-md-12">
+                    <i class="icon fa-lg fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="form-control" id="Email" placeholder="Serach">
+                    <label for="Serach" class="form-label">Serach</label>
+                </div>
+
+                <!-- Client Table -->
+
+                <div class="userTable">
+                    <div class="table">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Client Category</th>
+                                    <th scope="col">Color</th>
+                                    <th scope="col">Discription</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Corporate</td>
+                                    <td><input type="color"></td>
+                                    <td>Sekondi-Takoradi Metro</td>
+                                    <td>
+                                        <div class="switch">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"
+                                                    checked>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-bars"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                                        data-bs-target="#newCategoryModal">
+                                                        Delete
+                                                    </button>
+                                                </li>
+                                                <li><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                        data-bs-target="#newSubCategoryModal">
+                                                        More
+                                                    </button></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Corporate</td>
+                                    <td><input type="color"></td>
+                                    <td>Sekondi-Takoradi Metro</td>
+                                    <td>
+                                        <div class="switch">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"
+                                                    checked>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-bars"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                                        data-bs-target="#newCategoryModal">
+                                                        Delete
+                                                    </button>
+                                                </li>
+                                                <li><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                        data-bs-target="#newSubCategoryModal">
+                                                        More
+                                                    </button></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Corporate</td>
+                                    <td><input type="color"></td>
+                                    <td>Sekondi-Takoradi Metro</td>
+                                    <td>
+                                        <div class="switch">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"
+                                                    checked>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-bars"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                                        data-bs-target="#newCategoryModal">
+                                                        Delete
+                                                    </button>
+                                                </li>
+                                                <li><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                        data-bs-target="#newSubCategoryModal">
+                                                        More
+                                                    </button></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Corporate</td>
+                                    <td><input type="color"></td>
+                                    <td>Sekondi-Takoradi Metro</td>
+                                    <td>
+                                        <div class="switch">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"
+                                                    checked>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-bars"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                                        data-bs-target="#newCategoryModal">
+                                                        Delete
+                                                    </button>
+                                                </li>
+                                                <li><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                        data-bs-target="#newSubCategoryModal">
+                                                        More
+                                                    </button></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

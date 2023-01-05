@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+body{
+    background-color: whitesmoke;
+}
+.form{
+   max-width: 100%;
+   left: 0;
+   right: 0;
+   margin: 0% auto;
+   font-size: 12px;
+   font-weight: 500;
+   width: 90%;
+   color: #140430;
+}
+.form-floating{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    top: calc(50%);
+    left: 1.25rem;
+}  
+.form-floating label, .form-floating .form-control{
+    left: 0.5rem;
+    padding-left: 3.5rem;
+}
+.form-floating label{
+    font-size: 12px;
+    
+}
+.form-floating select{
+    font-size: 12px;
+    
+}
+.form-floating .date{
+    font-size: 12px;
+    font-weight: 500;
+}
+.btn-submit{
+    border-radius: 0%;
+    background-color: #7C3E66;
+    color: white;
+    box-shadow: rgba(238, 38, 228, 0.16) 0px 1px 4px;
+}
+.bg{
+    margin: 10% auto;
+    padding: ;
+    width: 90%;
+    overflow: auto;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    text-align: center; 
+    color: #30040e;
+    background-color: #f8f9fd;
+    box-shadow: rgba(238, 38, 228, 0.16) 0px 1px 4px;
+}
+.userForm{
+     margin: 10% auto;
+    padding: ;
+    width: 90%;
+    overflow: auto;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    text-align: center; 
+    color: #30040e;
+    background-color: #f8f9fd;
+    box-shadow: rgba(238, 38, 228, 0.16) 0px 1px 4px;
+
+}
+.serachFilter{
+    display: flex;
+    margin: 5%;
+}
+.userTable{
+    margin: 2% auto;
+    padding: 1%;
+    width: 90%;
+    overflow: auto;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    text-align: center; 
+}
+.userTable table{
+    width: 100%;
+}
+table thead tr th{
+    font-weight: 500;
+    border: none;
+    background-color: #f8f9fd;
+}
+tbody tr:hover{
+    background-color: whitesmoke;
+    color: #30040e;
+}
+.switch{
+    display: inline-block;
+}
+.dropdown button{
+    border-radius: 0%;
+    background-color: transparent;
+    border: none;
+    color: #7C3E66;
+}
+.dropdown button:hover{
+    background-color: transparent;
+    color: #000000;
+}
+.modal-header{
+    text-align: center;
+    background-color: #7C3E66;
+    color: white;
+}
+
+.container button{
+    border-radius: 0%;
+    width: 20%;
+    background-color: #7C3E66;
+    color: white;
+    box-shadow: rgba(238, 38, 228, 0.16) 0px 1px 4px;
+}
+
+
+/*  
+.form1{
+
+    position: relative;
+    width: 100%;
+}
+
+.form-input{
+
+    height: 35px;
+    text-indent: 33px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form table{
+    box-shadow: none;
+}
+
+label{
+    font-weight: 500;
+}
+
+.btn{
+    background-color: #7C3E66;
+    color: white;
+    box-shadow: rgba(238, 38, 228, 0.16) 0px 1px 4px;
+    border-radius: 0%;
+}
+.modal-footer 
+.modal-footer .btn-discard{
+    background-color: #F2EBE9;
+    color:#0e0d0e;
+    box-shadow: rgba(238, 38, 228, 0.16) 0px 1px 4px;
+    border-radius: 0%;
+}
+
+
+.addCategoryBtn{
+    background-color: #7C3E66;
+    color: white;
+    box-shadow: rgba(238, 38, 228, 0.16) 0px 1px 4px;
+    width: 15%;
+    font-size: 12px;
+    font-weight: 500;
+}
+td .dropdown{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: inline-block;
+}
+ */

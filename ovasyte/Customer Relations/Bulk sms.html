@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bluk sms</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/d407498546.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/ovasyte/ovasyte/assests/style.css">
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+
+          <div class="userTable">
+            <div class="table">
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">Transaction Date</th>
+                    <th scope="col">Transaction ID</th>
+                    <th scope="col">Reference ID</th>
+                    <th scope="col">Amount Paid</th>
+                    <th scope="col">Number Of SMS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1001000040</td>
+                    <td>Tue Jun 07 2022</td>
+                    <td>waste360_sms_package_006_10000_ref</td>
+                    <td>GH 500.00</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>1001000040</td>
+                    <td>Tue Jun 07 2022</td>
+                    <td>waste360_sms_package_006_10000_ref</td>
+                    <td>GH 500.00</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>1001000040</td>
+                    <td>Tue Jun 07 2022</td>
+                    <td>waste360_sms_package_006_10000_ref</td>
+                    <td>GH 500.00</td>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <td>1001000040</td>
+                    <td>Tue Jun 07 2022</td>
+                    <td>waste360_sms_package_006_10000_ref</td>
+                    <td>GH 500.00</td>
+                    <td>10000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="bg">
+    <div class="form form-floating mb-3">
+      <!-- Form -->
+      <form class="row g-3 m-5">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          style="width: 10%;">
+          Top Up
+        </button>
+        <div class="form-floating col-md-12">
+          <i class="icon fa-lg fa-solid fa-comment-dots"></i>
+          <textarea name="" class="form-control" id="inputmessage" cols="1" rows="1" placeholder="Message"></textarea>
+          <label for="inputmessage" class="form-label">Message</label>
+        </div>
+      </form>
+    </div>
+
+    <div class="form form-floating mb-3">
+      <form class="row g-3 m-5"></form>
+
+      <div class="wrapper my-5">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+              type="button" role="tab" aria-controls="nav-home" aria-selected="true">SMS Recipient Lis</button>
+
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+              type="button" role="tab" aria-controls="nav-profile" aria-selected="false">View All Sent SMS</button>
+
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+              type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Top Up</button>
+
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active p-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+
+            <div id="Recipient">
+              <h5 class="m-4">SMS Recipient List</h5>
+              <span class="m-3">
+                <input class="form-check-input mt-0" type="checkbox" value=""
+                  aria-label="Checkbox for following text input">By
+                client
+              </span>
+              <span class="m-3">
+                <input class="form-check-input mt-0" type="checkbox" value=""
+                  aria-label="Checkbox for following text input">By
+                Phone Number
+              </span>
+              <span class="m-3">
+                <input class="form-check-input mt-0" type="checkbox" value=""
+                  aria-label="Checkbox for following text input">By
+                Visitors
+              </span>
+              <span class="m-3">
+                <input class="form-check-input mt-0" type="checkbox" value=""
+                  aria-label="Checkbox for following text input">Select
+                All
+              </span>
+            </div>
+
+            <hr>
+
+            <div class="row g-2">
+              <div class="col-md col-md-4">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                    <option selected>Client</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md col-md-4">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                    <option selected>Category</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md col-md-4">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                    <option selected>Sub Category</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="container mt-5">
+              <div class="row height d-flex justify-content-center align-items-center">
+                <div class="search col-md-6">
+                  <div class="form1">
+                    <input type="text" class="form-control form-input" placeholder="Search...">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="userTable" id="userTable">
+              <div class="table">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Client</th>
+                      <th scope="col">Phone</th>
+                      <th scope="col">Address</th>
+                      <th scope="col">Select</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>ATm Pharmacy</td>
+                      <td>020300093</td>
+                      <td></td>
+                      <td>
+                        <input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>ATm Pharmacy</td>
+                      <td>020300093</td>
+                      <td></td>
+                      <td>
+                        <input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>ATm Pharmacy</td>
+                      <td>020300093</td>
+                      <td></td>
+                      <td>
+                        <input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>ATm Pharmacy</td>
+                      <td>020300093</td>
+                      <td></td>
+                      <td>
+                        <input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade p-3" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+            
+            <div class="row g-2">
+              <div class="col-md col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="search" placeholder="Serach">
+                  <label for="search" class="form-label">Search</label>
+                </div>
+              </div>
+              <div class="col-md col-md-4">
+                <div class="form-floating">
+                  <input type="date" class="form-control" id="Date" placeholder="Date">
+                </div>
+              </div>
+              <div class="col-md col-md-2">
+                <div class="form-floating">
+                  <button type="submit" class="btn btn-submit" id="inputSubmit" style="float: right;">Submit</button>
+                </div>
+              </div>
+            </div>
+            <div class="userTable" id="userTable">
+              <div class="table">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Client</th>
+                      <th scope="col">Date and Time</th>
+                      <th scope="col">Phone</th>
+                      <th scope="col">Category</th>
+                      <th scope="col">Sub Category</th>
+                      <th scope="col">Message</th>
+                      <th scope="col">Composed By / Verification Number</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>ATm Pharmacy</td>
+                      <td>Thu Jul 21 2022 10:30:17</td>
+                      <td>020300093</td>
+                      <td></td>
+                      <td></td>
+                      <td>Your Payment Of Ghs 30 To Waste360 Has</td>
+                      <td>Collection payment</td>
+                      <td>
+                        <input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input">
+                          <span>Delivered</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>ATm Pharmacy</td>
+                      <td>Thu Jul 21 2022 10:30:17</td>
+                      <td>020300093</td>
+                      <td></td>
+                      <td></td>
+                      <td>Your Payment Of Ghs 30 To Waste360 Has</td>
+                      <td>Collection payment</td>
+                      <td>
+                        <input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input">
+                        <span>Delivered</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>ATm Pharmacy</td>
+                      <td>Thu Jul 21 2022 10:30:17</td>
+                      <td>020300093</td>
+                      <td></td>
+                      <td></td>
+                      <td>Your Payment Of Ghs 30 To Waste360 Has</td>
+                      <td>Collection payment</td>
+                      <td>
+                        <input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input">
+                          <span>Delivered</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>ATm Pharmacy</td>
+                      <td>Thu Jul 21 2022 10:30:17</td>
+                      <td>020300093</td>
+                      <td></td>
+                      <td></td>
+                      <td>Your Payment Of Ghs 30 To Waste360 Has</td>
+                      <td>Collection payment</td>
+                      <td>
+                        <input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input">
+                          <span>Delivered</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade p-3" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            
+            <div class="row g-2">
+              <div class="col-md col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="search" placeholder="Serach">
+                  <label for="search" class="form-label">Top Up Amount</label>
+                </div>
+              </div>
+              <div class="col-md col-md-4">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="Date" placeholder="Date">
+                  <label for="search" class="form-label">Number of SMS</label>
+                </div>
+              </div>
+              <div class="col-md col-md-2">
+                <div class="form-floating">
+                  <button type="submit" class="btn btn-submit" id="inputSubmit" style="float: right;">Make Payment</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="userTable" id="userTable">
+              <div class="table">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Transaction Date</th>
+                      <th scope="col">Transaction ID</th>
+                      <th scope="col">Reference ID</th>
+                      <th scope="col">Amount Paid</th>
+                      <th scope="col">Number Of SMS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1001000040</td>
+                      <td>Tue Jun 07 2022</td>
+                      <td>waste360_sms_package_006_10000_ref</td>
+                      <td>GH 500.00</td>
+                      <td>10000</td>
+                    </tr>
+                    <tr>
+                      <td>1001000040</td>
+                      <td>Tue Jun 07 2022</td>
+                      <td>waste360_sms_package_006_10000_ref</td>
+                      <td>GH 500.00</td>
+                      <td>10000</td>
+                    </tr>
+                    <tr>
+                      <td>1001000040</td>
+                      <td>Tue Jun 07 2022</td>
+                      <td>waste360_sms_package_006_10000_ref</td>
+                      <td>GH 500.00</td>
+                      <td>10000</td>
+                    </tr>
+                    <tr>
+                      <td>1001000040</td>
+                      <td>Tue Jun 07 2022</td>
+                      <td>waste360_sms_package_006_10000_ref</td>
+                      <td>GH 500.00</td>
+                      <td>10000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
